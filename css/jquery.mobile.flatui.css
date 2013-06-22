@@ -307,8 +307,8 @@
 /* Active class used as the "on" state across all themes
 -----------------------------------------------------------------------------------------------------------*/
 .ui-btn-active {
-	border: 1px solid 		#1abc9c /*{global-active-border}*/;
-	background: 			#1abc9c /*{global-active-background-color}*/;
+	border: 1px solid 		#ffde00 /*{global-active-border}*/;
+	background: 			#ffde00 /*{global-active-background-color}*/;
 	font-weight: bold;
 	color: 					#ffffff /*{global-active-color}*/;
 	cursor: pointer;
@@ -770,7 +770,7 @@ div.ui-mobile-viewport { overflow-x: hidden; }
 .ui-header .ui-title, .ui-footer .ui-title { min-height: 1.1em; text-align: center; font-size: 14px; display: block; margin: .6em 30% .8em; padding: 0; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; outline: 0 !important; }
 .ui-footer .ui-title { margin: .6em 15px .8em; }
 /* content area*/
-.ui-content { border-width: 0; overflow: visible; overflow-x: hidden; padding: 15px; width:100%;}
+.ui-content { border-width: 0; overflow: visible; overflow-x: hidden; padding: 15px;}
 /* corner styling for dialogs and popups */
 .ui-corner-all > .ui-header:first-child,
 .ui-corner-all > .ui-content:first-child,
@@ -1813,7 +1813,7 @@ label.ui-submit { font-size: 16px; line-height: 1.4; font-weight: normal; margin
 	-webkit-border-bottom-left-radius: 0;
 	border-bottom-left-radius: 0;
 }
-.ui-collapsible-set { margin: .5em 0; }
+.ui-collapsible-set { margin: 0; }
 .ui-collapsible-set .ui-collapsible { margin: -1px 0 0; }
 .ui-collapsible-set .ui-collapsible.ui-first-child { margin-top: 0; }
 .ui-controlgroup, fieldset.ui-controlgroup { padding: 0; margin: .5em 0; zoom: 1; }

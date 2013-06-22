@@ -55,14 +55,15 @@
 		<div data-role="content">
 			<ul data-role="listview">
 				<li><a href="#promotions">Promotions</a></li>		    	  
-				<li style="border-bottom: 1px solid #f2f2f2;"><a href="#map">Map</a></li>		    	  
+				<li><a href="#map">Map</a></li>	
+				<li><a href="#register">Register</a></li>
 			</ul>
 		</div>
 		<div data-role="footer" data-position="fixed" data-id="footer">
 			<a href="#about" data-icon="info">About</a>
 		</div>
 	</div>
-	
+
 		<div id="basic_map" data-role="page">
 			<div data-role="header">
 				<h1><a data-ajax="false" href="/">jQuery mobile with Google maps v3</a> examples</h1>
@@ -75,7 +76,7 @@
 			</div>
 		</div>
 
-	
+
 	<div data-role="page" id="about">
 		<div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push">
 			<!--<ul data-role="listview">
@@ -96,7 +97,7 @@
 			<a href="#home" data-icon="arrow-l" data-rel="back">Back</a> 
 		</div>
 	</div>
-	
+
 	<div data-role="page" id="map">
 		<div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push">
 			<ul data-role="listview">
@@ -151,12 +152,13 @@
 			<a href="#home" data-icon="arrow-l" data-rel="back">Back</a> 
 		</div>
 	</div>
-	
+
 	<div data-role="page" id="promotions">
 		<div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push">
 			<ul data-role="listview">
 				<li><a href="#promotions">Promotions</a></li>		    	  
-				<li><a href="#map">Map</a></li>		    	  
+				<li><a href="#map">Map</a></li>
+				<li><a href="#register">Register</a></li>		    	  
 			</ul>
 		</div>
 		<div data-role="header">
@@ -168,39 +170,194 @@
 			<div data-role="collapsible-set" data-theme="a" data-content-theme="c">
 				<div data-role="collapsible" data-collapsed-icon="flat-plus" data-expanded-icon="flat-cross" data-collapsed="false">
 					<h3>Clothing</h3>
-					<p>I'm the collapsible content for section 1</p>
+					<style>
+					.ui-li-has-arrow .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-arrow {
+					padding-right: 20px;
+					}
+					.ui-li-has-thumb .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li-has-thumb {
+						padding-left: 20px;
+					}
+					h3.ui-li-heading {margin-left:90px;}   p.ui-li-desc {margin-left:90px;}
+					</style>
+					<ul data-role="listview" class="ui-listview">
+								<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-bb.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">Cole Haans</h3>
+									<p class="ui-li-desc">10% off everything in the store (non-sale items)</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+								<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-hc.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">MAX MARA</h3>
+									<p class="ui-li-desc">F/F 2013 10% off</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+								<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-p.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">H&M</h3>
+									<p class="ui-li-desc">15% off everything in the store</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+								
+							</ul>
 				</div>
 				<div data-role="collapsible" data-collapsed-icon="flat-plus" data-expanded-icon="flat-cross">
 					<h3>Appliances</h3>
-					<p></p>
+					<ul data-role="listview" class="ui-listview">
+								<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-bb.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">Cole Haans</h3>
+									<p class="ui-li-desc">10% off everything in the store (non-sale items)</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+								<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-hc.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">MAX MARA</h3>
+									<p class="ui-li-desc">F/F 2013 10% off</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+								<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-p.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">H&M</h3>
+									<p class="ui-li-desc">15% off everything in the store</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+								
+							</ul>
 				</div>
 				<div data-role="collapsible" data-collapsed-icon="flat-plus" data-expanded-icon="flat-cross">
 					<h3>Automotive</h3>
-					<p></p>
+					<ul data-role="listview" class="ui-listview">
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-bb.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">Cole Haans</h3>
+									<p class="ui-li-desc">10% off everything in the store (non-sale items)</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-hc.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">MAX MARA</h3>
+									<p class="ui-li-desc">F/F 2013 10% off</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-p.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">H&M</h3>
+									<p class="ui-li-desc">15% off everything in the store</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+					</ul>
 				</div>
 				<div data-role="collapsible" data-collapsed-icon="flat-plus" data-expanded-icon="flat-cross">
 					<h3>Electronics</h3>
-					<p></p>
+					<ul data-role="listview" class="ui-listview">
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-bb.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">Cole Haans</h3>
+									<p class="ui-li-desc">10% off everything in the store (non-sale items)</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-hc.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">MAX MARA</h3>
+									<p class="ui-li-desc">F/F 2013 10% off</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-p.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">H&M</h3>
+									<p class="ui-li-desc">15% off everything in the store</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+					</ul>
 				</div>
 				<div data-role="collapsible" data-collapsed-icon="flat-plus" data-expanded-icon="flat-cross">
 					<h3>Furniture</h3>
-					<p></p>
+					<ul data-role="listview" class="ui-listview">
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-bb.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">Cole Haans</h3>
+									<p class="ui-li-desc">10% off everything in the store (non-sale items)</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-hc.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">MAX MARA</h3>
+									<p class="ui-li-desc">F/F 2013 10% off</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-p.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">H&M</h3>
+									<p class="ui-li-desc">15% off everything in the store</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+					</ul>
 				</div>
 				<div data-role="collapsible" data-collapsed-icon="flat-plus" data-expanded-icon="flat-cross">
 					<h3>Groceries</h3>
-					<p></p>
+					<ul data-role="listview" class="ui-listview">
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-bb.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">Cole Haans</h3>
+									<p class="ui-li-desc">10% off everything in the store (non-sale items)</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-hc.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">MAX MARA</h3>
+									<p class="ui-li-desc">F/F 2013 10% off</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-p.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">H&M</h3>
+									<p class="ui-li-desc">15% off everything in the store</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+					</ul>
 				</div>
 				<div data-role="collapsible" data-collapsed-icon="flat-plus" data-expanded-icon="flat-cross">
 					<h3>Sports</h3>
-					<p></p>
+					<ul data-role="listview" class="ui-listview">
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-bb.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">Cole Haans</h3>
+									<p class="ui-li-desc">10% off everything in the store (non-sale items)</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-hc.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">MAX MARA</h3>
+									<p class="ui-li-desc">F/F 2013 10% off</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-p.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">H&M</h3>
+									<p class="ui-li-desc">15% off everything in the store</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+					</ul>
 				</div>
-				<div data-role="collapsible" data-collapsed-icon="flat-settings" data-expanded-icon="flat-cross">
+				<div data-role="collapsible" data-collapsed-icon="flat-plus" data-expanded-icon="flat-cross">
 					<h3>Outdoors</h3>
-					<p></p>
+					<ul data-role="listview" class="ui-listview">
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-bb.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">Cole Haans</h3>
+									<p class="ui-li-desc">10% off everything in the store (non-sale items)</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-hc.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">MAX MARA</h3>
+									<p class="ui-li-desc">F/F 2013 10% off</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-p.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">H&M</h3>
+									<p class="ui-li-desc">15% off everything in the store</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+					</ul>
 				</div>
-				<div data-role="collapsible" data-collapsed-icon="flat-settings" data-expanded-icon="flat-cross">
+				<div data-role="collapsible" data-collapsed-icon="flat-plus" data-expanded-icon="flat-cross">
 					<h3>Training</h3>
-					<p></p>
+					<ul data-role="listview" class="ui-listview">
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-bb.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">Cole Haans</h3>
+									<p class="ui-li-desc">10% off everything in the store (non-sale items)</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-up-c ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-hc.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">MAX MARA</h3>
+									<p class="ui-li-desc">F/F 2013 10% off</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+							<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="#map" class="ui-link-inherit">
+									<img src="http://jquerymobile.com/demos/1.1.1/docs/lists/images/album-p.jpg" class="ui-li-thumb">
+									<h3 class="ui-li-heading">H&M</h3>
+									<p class="ui-li-desc">15% off everything in the store</p>
+								</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -208,7 +365,49 @@
 			<a href="#home" data-icon="arrow-l" data-rel="back">Back</a> 
 		</div>
 	</div>
-	
+<div data-role="page" id="register">
+	<div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push">
+		<ul data-role="listview">
+			<li><a href="#promotions">Promotions</a></li>		    	  
+			<li><a href="#map">Map</a></li>  
+			<li><a href="#register">Register</a></li>			    	  
+		</ul>
+	</div>
+	<div data-role="header">
+		<a href="#home" data-iconpos="notext" data-role="button" data-icon="home" title="Home">Home</a>
+		<h1>Register</h1>
+		<a data-iconpos="notext" href="#panel" data-role="button" data-icon="flat-menu"></a>
+	</div>
+	<div data-role="content">
+		<form>
+		<div data-role="fieldcontain" class="ui-hide-label">
+			<label for="business-name">Business Name</label>
+			<input type="text" name="business-name" id="business-name" value="" placeholder="Business Name"/>
+		</div>
+		<div data-role="fieldcontain" class="ui-hide-label">
+			<label for="address">Address</label>
+			<input type="text" name="address" id="address" value="" placeholder="Address"/>
+		</div>
+		<div data-role="fieldcontain" class="ui-hide-label">
+			<label for="address">Product Name</label>
+			<input type="text" name="address" id="address" value="" placeholder="Product Name"/>
+		</div>
+		<div data-role="fieldcontain" class="ui-hide-label">
+			<label for="address">Product Description</label>
+			<input type="text" name="address" id="address" value="" placeholder="Product Description"/>
+		</div>
+		<fieldset class="ui-grid-a">
+				<div class="ui-block-a"><div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="null" data-iconpos="null" data-theme="d" class="ui-btn ui-shadow ui-btn-corner-all ui-submit ui-btn-up-d" aria-disabled="false"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Cancel</span></span></div></div>
+				<div class="ui-block-b"><div data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-icon="null" data-iconpos="null" data-theme="a" class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-submit" aria-disabled="false"><span class="ui-btn-inner ui-btn-corner-all"><span class="ui-btn-text">Submit</span></span></div></div>
+	    </fieldset>
+		
+		</form>
+	</div>
+	<div data-role="footer" data-position="fixed" data-id="footer">
+		<a href="#home" data-icon="arrow-l" data-rel="back">Back</a> 
+	</div>
+</div>
+
 	<!--<div data-role="page" id="qrcode1">
 		<div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push"></div>
 		<div data-role="header">
