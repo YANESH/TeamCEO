@@ -109,17 +109,20 @@
 			<a data-iconpos="notext" href="#panel" data-role="button" data-icon="flat-menu"></a>
 		</div>
 		<div data-role="content">
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 			<style type="text/css">
 			body {
 			}
-			  #map-canvas { height: 600px;  width:100%; margin: -15px;}
+			  #map-canvas { height: 600px;  width:100%; margin: -15px;};
+			  .ui-content{
+					width:100%;
+				}
 			</style>
 			<script type="text/javascript"
 			  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN9dWhpoQ4OJwg9phGbQvagodlgg07weE&sensor=false">
 			</script>
 			<script src="js/js.js" type="text/jscript"></script>
 			<div id="map-canvas" ></div>
-			
 		</div>
 		<div data-role="footer" data-position="fixed" data-id="footer">
 			<a href="#home" data-icon="arrow-l" data-rel="back">Back</a> 

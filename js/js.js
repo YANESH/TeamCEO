@@ -1,24 +1,12 @@
 
 //store 1 The source 200 Wellington Street West, Toronto, ON M5V 3C7
 var store1String = '<div id="content">'+
-      '<div id="siteNotice">'+
       '</div>'+
-      '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+      '<h1 id="firstHeading" class="firstHeading">The Source</h1>'+
       '<div id="bodyContent">'+
-      '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-      'sandstone rock formation in the southern part of the '+
-      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-      'south west of the nearest large town, Alice Springs; 450&#160;km '+
-      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
-      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
-      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
-      'Aboriginal people of the area. It has many springs, waterholes, '+
-      'rock caves and ancient paintings. Uluru is listed as a World '+
-      'Heritage Site.</p>'+
-      '<p>Attribution: Uluru, <a href="http://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-      'http://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-      '(last visited June 22, 2009).</p>'+
-      '</div>'+
+      '<p>200 Wellington Street Weset<br>Toronto, ON M5V 3C7<br>(416)263-9858</p>'+
+      '<p><a href="http://www.thesource.ca/">'+
+      'thesource.ca</a></p>'+
       '</div>';
 var store1LatLng = new google.maps.LatLng(43.64275410, -79.39328590);
 var store1InfoWindow = new google.maps.InfoWindow({
@@ -26,17 +14,61 @@ var store1InfoWindow = new google.maps.InfoWindow({
 });
 
 //store 2 Mountain Equipment Co-op
+var store2String = '<div id="content">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Mountain Equipment Co-op</h1>'+
+      '<div id="bodyContent">'+
+      '<p>200 Wellington Street Weset<br>Toronto, ON M5V 3C7<br>(416)263-9858</p>'+
+      '<p><a href="http://www.thesource.ca/">'+
+      'thesource.ca</a></p>'+
+      '</div>';
 var store2LatLng = new google.maps.LatLng(43.64609030, -79.3931060);
-
+var store2InfoWindow = new google.maps.InfoWindow({
+	content: store2String
+});
 
 //store 3 Alpine Motors Ltd
+var store3String = '<div id="content">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Alpine Motors Ltd</h1>'+
+      '<div id="bodyContent">'+
+      '<p>200 Wellington Street Weset<br>Toronto, ON M5V 3C7<br>(416)263-9858</p>'+
+      '<p><a href="http://www.thesource.ca/">'+
+      'thesource.ca</a></p>'+
+      '</div>';
 var store3LatLng = new google.maps.LatLng(43.64687480,-79.39129020);
+var store3InfoWindow = new google.maps.InfoWindow({
+	content: store3String
+});
 
 //store 4 King Furniture
+var store4String = '<div id="content">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">King Furniture</h1>'+
+      '<div id="bodyContent">'+
+      '<p>200 Wellington Street Weset<br>Toronto, ON M5V 3C7<br>(416)263-9858</p>'+
+      '<p><a href="http://www.thesource.ca/">'+
+      'thesource.ca</a></p>'+
+      '</div>';
 var store4LatLng = new google.maps.LatLng(43.64691550, -79.38858429999999);
+var store4InfoWindow = new google.maps.InfoWindow({
+	content: store4String
+});
 
 //store 5 Adelaide Sports Store
+var store5String = '<div id="content">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Adelaide Sports Store</h1>'+
+      '<div id="bodyContent">'+
+      '<p>200 Wellington Street Weset<br>Toronto, ON M5V 3C7<br>(416)263-9858</p>'+
+      '<p><a href="http://www.thesource.ca/">'+
+      'thesource.ca</a></p>'+
+      '</div>';
 var store5LatLng = new google.maps.LatLng(43.64865420, -79.38193050);
+var store5InfoWindow = new google.maps.InfoWindow({
+	content: store5String
+});
+
 
 function initialize() {
 var mapOptions = {
@@ -78,11 +110,50 @@ var store5Marker = new google.maps.Marker({
 	title: 'Adelaide Sports Store'
 });
 
-google.maps.event.addListener(store1Marker, 'click', function() {
-	infowindow.open(map,store1Marker);
-	});
-}
+var infoWindow1 = new google.maps.InfoWindow({
+	content: store1String
+});
 
+  google.maps.event.addListener(store1Marker, 'click', function() {
+    infoWindow1.open(map,store1Marker);
+  });
+  
+  var infoWindow2 = new google.maps.InfoWindow({
+	content: store2String
+});
+
+  google.maps.event.addListener(store2Marker, 'click', function() {
+    infoWindow2.open(map,store2Marker);
+  });
+  
+  var infoWindow3 = new google.maps.InfoWindow({
+	content: store3String
+});
+
+  google.maps.event.addListener(store3Marker, 'click', function() {
+    infoWindow3.open(map,store3Marker);
+  });
+
+
+var infoWindow4 = new google.maps.InfoWindow({
+	content: store4String
+});
+
+  google.maps.event.addListener(store4Marker, 'click', function() {
+    infoWindow4.open(map,store4Marker);
+  });
+  
+  var infoWindow5 = new google.maps.InfoWindow({
+	content: store5String
+});
+
+  google.maps.event.addListener(store5Marker, 'click', function() {
+    infoWindow5.open(map,store5Marker);
+  });
+  
+  }
+  
+  
 function detectBrowser() {
   var useragent = navigator.userAgent;
   var mapdiv = document.getElementById("map-canvas");
@@ -97,3 +168,4 @@ function detectBrowser() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
