@@ -39,7 +39,7 @@
 			});
 	</script-->
 </head>
-<body onunload="GUnload()">
+<body>
 
 	<div data-role="page" id="home">
 		<div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push">
@@ -55,7 +55,7 @@
 		<div data-role="content">
 			<ul data-role="listview">
 				<li><a href="#promotions">Promotions</a></li>		    	  
-				<li><a href="#map">Map</a></li>		    	  
+				<li style="border-bottom: 1px solid #f2f2f2;"><a href="#map">Map</a></li>		    	  
 			</ul>
 		</div>
 		<div data-role="footer" data-position="fixed" data-id="footer">
@@ -99,30 +99,53 @@
 	
 	<div data-role="page" id="map">
 		<div data-role="panel" id="panel" data-position="right" data-theme="a" data-display="push">
-			<!--<ul data-role="listview">
-				<li><a href="#test">Promotions</a></li>		  	    
-			</ul>-->
+			<ul data-role="listview">
+				<li style="padding: 0; border: 0;">
+					<input type="checkbox" name="" id="Clothing" checked="checked"  style="margin: 0;"/>
+					<label for="Clothing" style="margin: 0; background: #003160; border: 0; border-top: 1px solid #00264a; border-bottom: 1px solid #00264a; color: #ffffff;border-radius:0;">Clothing</label>
+				</li>
+				<li style="padding: 0; border: 0;">
+					<input type="checkbox" name="" id="Electronics" checked="checked" style="margin: 0;" />
+					<label for="Electronics" style="margin: 0; background: #003160; border: 0; border-bottom: 1px solid #00264a; color: #ffffff;border-radius:0;">Electronics</label>
+				</li>
+				<li style="padding: 0; border: 0;">
+					<input type="checkbox" name=""  id="Furniture" checked="checked" style="margin: 0;" />
+					<label for="Furniture" style="margin: 0; background: #003160; border: 0; border-bottom: 1px solid #00264a; color: #ffffff;border-radius:0;">Furniture</label>
+				</li>
+				<li style="padding: 0; border: 0;">
+					<input type="checkbox" name=""  id="Games" checked="checked"  style="margin: 0;"/>
+					<label for="Games" style="margin: 0; background: #003160; border: 0; border-bottom: 1px solid #00264a; color: #ffffff;border-radius:0;">Games</label>
+				</li>
+				<li style="padding: 0; border: 0;">
+					<input type="checkbox" name=""  id="Sports" checked="checked" style="margin: 0;" />
+					<label for="Sports" style="margin: 0; background: #003160; border: 0; border-bottom: 1px solid #00264a; color: #ffffff;border-radius:0;">Sports</label>
+				</li>
+				<li style="padding: 0; border: 0;">
+					<fieldset class="ui-grid-a" style="padding: 0; margin: 0; background: #0060a9;" align="center">
+						<div class="ui-block-a"style="padding: 0; margin: 0; background: #0060a9; width: 100%;"><button data-icon="flat-location" data-theme="e" style="margin: 0; ">FILTER</button></div>
+					</fieldset>
+				</li>
+			</ul>
 		</div>
 		<div data-role="header">
 			<a href="#home" data-iconpos="notext" data-role="button" data-icon="home" title="Home">Home</a>
 			<h1>Map</h1>
 			<a data-iconpos="notext" href="#panel" data-role="button" data-icon="flat-menu"></a>
 		</div>
-		<div data-role="content">
+		<div data-role="content" style="padding: 0;">
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 			<style type="text/css">
-			body {
+			body,html {
+			height:100%;
 			}
-			  #map-canvas { height: 600px;  width:100%; margin: -15px;};
-			  .ui-content{
-					width:100%;
-				}
+			#map-canvas { height: 100%; min-height: 100%;}
+
 			</style>
 			<script type="text/javascript"
 			  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN9dWhpoQ4OJwg9phGbQvagodlgg07weE&sensor=false">
 			</script>
 			<script src="js/js.js" type="text/jscript"></script>
-			<div id="map-canvas" ></div>
+			<div id="map-canvas" style="width:320px; height:389px;"></div>
 		</div>
 		<div data-role="footer" data-position="fixed" data-id="footer">
 			<a href="#home" data-icon="arrow-l" data-rel="back">Back</a> 
